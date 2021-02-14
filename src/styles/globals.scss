@@ -1,0 +1,31 @@
+html,
+body {
+  --text: #333;
+  --link: #f05e59;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 0.1em;
+  color: var(--text);
+}
+
+a {
+  text-decoration: underline;
+  color: var(--link);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.container {
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 700px;
+}
