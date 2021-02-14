@@ -90,7 +90,18 @@ const PageTemplate: FC<PageTemplateProps> = ({
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          background-color: #efd6d5;
+          background-color: rgb(239, 214, 213);
+          animation: pulse 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+          0%,
+          100% {
+            background-color: rgb(239, 214, 213);
+          }
+          50% {
+            background-color: rgba(239, 214, 213, 0.4);
+          }
         }
 
         .item + li {
