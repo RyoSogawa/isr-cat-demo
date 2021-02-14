@@ -25,6 +25,18 @@ const PageSsr: NextPage<PageSsrProps> = ({ imgSrc, timePoint }) => {
       subTitle="server side rendering"
       imgSrc={imgSrc}
       timePoint={timePoint}
+      whatIs={
+        <p>
+          Server Side
+          Renderingでは、サーバーがAPIを叩き、最終的なHTMLを生成してクライアントに返却します。
+        </p>
+      }
+      flows={[
+        'ユーザーがリクエストを送信する',
+        'サーバーがAPIを叩き結果を取得する',
+        'サーバーが結果を反映させたページを生成し返却する',
+        'ブラウザにページが表示される',
+      ]}
       goodPoints={[
         '生成済みのHTMLを取得するのでSEOに問題がない',
         'リアルタイムでデータを取得するので常に最新の情報が表示される',
