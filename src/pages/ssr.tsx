@@ -42,7 +42,10 @@ const PageSsr: NextPage<PageSsrProps> = ({ imgSrc, timePoint }) => {
         '生成済みのHTMLを取得するのでSEOに問題がない',
         'リアルタイムでデータを取得するので常に最新の情報が表示される',
       ]}
-      badPoints={['データ取得に時間がかかる', '画面遷移も時間がかかる']}
+      badPoints={[
+        'データ取得に時間がかかる',
+        'その結果表示/遷移も時間がかかる',
+      ]}
     />
   )
 }
