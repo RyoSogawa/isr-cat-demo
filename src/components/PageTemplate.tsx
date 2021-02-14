@@ -23,12 +23,14 @@ const PageTemplate: FC<PageTemplateProps> = ({
       <div className="cat-img-wrapper">
         {imgSrc && <img src={imgSrc} alt="猫画像" className="cat-img" />}
       </div>
-      {timePoint && <span className="font-inter time-point">{timePoint}</span>}
+      {timePoint && (
+        <span className="font-inter time-point">{timePoint}にデータ取得</span>
+      )}
       <h1 className="font-inter">
         {title}
         <span className="font-inter sub-title">{subTitle}</span>
       </h1>
-      <h2 className="font-inter mt-wide">👍 GOOD</h2>
+      <h2 className="font-inter">👍 GOOD</h2>
       <ul>
         {goodPoints.map(gp => (
           <li key={gp}>{gp}</li>
@@ -70,10 +72,6 @@ const PageTemplate: FC<PageTemplateProps> = ({
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-        }
-
-        .mt-wide {
-          margin-top: 2rem;
         }
       `}</style>
     </div>
