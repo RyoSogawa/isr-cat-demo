@@ -28,7 +28,7 @@ const PageTemplate: FC<PageTemplateProps> = ({
         {imgSrc && <img src={imgSrc} alt="猫画像" className="cat-img" />}
       </div>
       {timePoint && (
-        <span className="font-inter time-point">{timePoint}にデータ取得</span>
+        <span className="font-inter time-point">{timePoint}にデータ取得完了</span>
       )}
       <h1 className="font-inter">
         {title}
