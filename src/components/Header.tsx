@@ -5,7 +5,7 @@ const Header: FC = () => {
   return (
     <header>
       <div className="container">
-        <ul className="global-menu">
+        <ul className="global-menu font-inter">
           <li className="item">
             <Link href="/csr">
               <a className="link">CSR</a>

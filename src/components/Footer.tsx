@@ -3,11 +3,12 @@ const Footer: FC = () => {
   return (
     <footer>
       <div className="container">
-        <small>&copy; Ryo Sogawa</small>
+        <small>&copy; RyoSogawa</small>
         <a
           href="https://github.com/RyoSogawa/isr-cat-demo"
           target="_blank"
           rel="noreferrer noopener"
+          className="font-inter"
         >
           GitHub
         </a>

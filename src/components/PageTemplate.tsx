@@ -43,7 +43,7 @@ const PageTemplate: FC<PageTemplateProps> = ({
         ))}
       </ul>
       <Link href="/">
-        <a>←TOP</a>
+        <a className="font-inter">←TOP</a>
       </Link>
       <style jsx>{`
         .sub-title {
@@ -60,7 +60,7 @@ const PageTemplate: FC<PageTemplateProps> = ({
         .cat-img-wrapper {
           position: relative;
           height: 0;
-          padding-top: 56.25%;
+          padding-top: 100%;
           overflow: hidden;
         }
 
@@ -72,6 +72,7 @@ const PageTemplate: FC<PageTemplateProps> = ({
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          background-color: #efd6d5;
         }
       `}</style>
     </div>
