@@ -1,5 +1,6 @@
 {
   "name": "isr-cat-demo",
+  "author": "RyoSogawa",
   "version": "0.1.0",
   "private": true,
   "scripts": {
