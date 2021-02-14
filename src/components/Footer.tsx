@@ -15,6 +15,7 @@ const Footer: FC = () => {
       <style jsx>{`
         footer {
           margin-top: 2rem;
+          padding: 0.5rem 0;
         }
         small {
           font-size: 11px;

@@ -14,6 +14,10 @@ a {
   color: var(--link);
 }
 
+img {
+  max-width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,6 +26,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .container {
