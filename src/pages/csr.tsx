@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { NextPage } from 'next'
 import { fetchRandomImg } from '../lib/api'
+import { getNowDatetime } from '../lib/datetime'
 import PageTemplate from '../components/PageTemplate'
 
 const PageCsr: NextPage = () => {
@@ -10,7 +11,7 @@ const PageCsr: NextPage = () => {
   useEffect(() => {
     fetchRandomImg().then(res => {
       setCatImgSrc(res)
-      setFetchTimePoint(new Date().toLocaleString())
+      setFetchTimePoint(getNowDatetime())
     })
   }, [])
 

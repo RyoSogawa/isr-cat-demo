@@ -1,5 +1,6 @@
 import { NextPage, GetServerSideProps } from 'next'
 import { fetchRandomImg } from '../lib/api'
+import { getNowDatetime } from '../lib/datetime'
 import PageTemplate from '../components/PageTemplate'
 
 type PageSsrProps = {
@@ -13,7 +14,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return {
     props: {
       imgSrc,
-      timePoint: new Date().toLocaleString(),
+      timePoint: getNowDatetime(),
     },
   }
 }

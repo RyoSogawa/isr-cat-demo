@@ -1,5 +1,6 @@
 import { NextPage, GetStaticProps } from 'next'
 import { fetchRandomImg } from '../lib/api'
+import { getNowDatetime } from '../lib/datetime'
 import PageTemplate from '../components/PageTemplate'
 
 type PageIsrProps = {
@@ -13,7 +14,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       imgSrc,
-      timePoint: new Date().toLocaleString(),
+      timePoint: getNowDatetime(),
     },
     revalidate: 30,
   }
